@@ -1,4 +1,8 @@
-# Install GRDB with Custom SQLite Build
+# GRDB with Custom SQLite Build
+
+You can clone the repository and launch it in Xcode. It should run out of the box.
+
+## How to Set Up in Your Own Project
 
 1. Create a few new directories _inside_ your app project:
 
