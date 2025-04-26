@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E77CF592DBCDA5B0039928F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 4E77CF582DBCDA5B0039928F /* GRDB */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4E222E2A2DBCCD060008708F /* GRDBCustomSQLiteBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBCustomSQLiteBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E77CF562DBCD9E50039928F /* GRDBCustom */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GRDBCustom; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E77CF592DBCDA5B0039928F /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +38,9 @@
 		4E222E212DBCCD060008708F = {
 			isa = PBXGroup;
 			children = (
+				4E77CF562DBCD9E50039928F /* GRDBCustom */,
 				4E222E2C2DBCCD060008708F /* GRDBCustomSQLiteBuild */,
+				4E77CF572DBCDA5B0039928F /* Frameworks */,
 				4E222E2B2DBCCD060008708F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,13 @@
 				4E222E2A2DBCCD060008708F /* GRDBCustomSQLiteBuild.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E77CF572DBCDA5B0039928F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +80,7 @@
 			);
 			name = GRDBCustomSQLiteBuild;
 			packageProductDependencies = (
+				4E77CF582DBCDA5B0039928F /* GRDB */,
 			);
 			productName = GRDBCustomSQLiteBuild;
 			productReference = 4E222E2A2DBCCD060008708F /* GRDBCustomSQLiteBuild.app */;
@@ -320,6 +336,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E77CF582DBCDA5B0039928F /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E222E222DBCCD060008708F /* Project object */;
 }
