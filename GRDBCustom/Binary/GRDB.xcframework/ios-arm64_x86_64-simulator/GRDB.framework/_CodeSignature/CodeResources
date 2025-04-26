@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/GRDB.h</key>
 		<data>
-		ZnA0/7uQ6TtL1OrQMOMBzcsVia8=
+		7nbHBB3Jn9cb/l1a3tnYUYs6hTk=
 		</data>
 		<key>Headers/GRDBCustomSQLite-USER.h</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Headers/sqlite3.h</key>
 		<data>
 		wRLgCm4oIxBS4pAQk1+qp8DVYbs=
+		</data>
+		<key>Headers/sqlite3ext.h</key>
+		<data>
+		tfUY4PTun2fAZBibn1urgy6+03U=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -101,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fMDJQt3+ORpgR/ZDiCY24H4YsH7NfB0cbYEK/kvhPio=
+			0SgHo/ISe/gftf5fQgg7cD1+wo0ep8N9oq0AIm85Hf4=
 			</data>
 		</dict>
 		<key>Headers/GRDBCustomSQLite-USER.h</key>
@@ -116,6 +120,13 @@
 			<key>hash2</key>
 			<data>
 			tLTLzCvW3ajq80gQPDMMlxZ2pZs3MsygaAmPV03kOZQ=
+			</data>
+		</dict>
+		<key>Headers/sqlite3ext.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sYTdFYbZNRM9N612+jU/rwoQIf8v3t7tzDSY//dLu5Q=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

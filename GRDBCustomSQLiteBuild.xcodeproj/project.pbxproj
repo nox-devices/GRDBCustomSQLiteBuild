@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4E77CF592DBCDA5B0039928F /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 4E77CF582DBCDA5B0039928F /* GRDB */; };
+		4E77CF752DBCE91E0039928F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E77CF742DBCE91E0039928F /* README.md */; };
+		4E77CF7F2DBCE9BE0039928F /* SQLiteExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 4E77CF7E2DBCE9BE0039928F /* SQLiteExtensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E222E2A2DBCCD060008708F /* GRDBCustomSQLiteBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBCustomSQLiteBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E77CF562DBCD9E50039928F /* GRDBCustom */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GRDBCustom; sourceTree = "<group>"; };
+		4E77CF742DBCE91E0039928F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E77CF7F2DBCE9BE0039928F /* SQLiteExtensions in Frameworks */,
 				4E77CF592DBCDA5B0039928F /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +42,7 @@
 		4E222E212DBCCD060008708F = {
 			isa = PBXGroup;
 			children = (
+				4E77CF742DBCE91E0039928F /* README.md */,
 				4E77CF562DBCD9E50039928F /* GRDBCustom */,
 				4E222E2C2DBCCD060008708F /* GRDBCustomSQLiteBuild */,
 				4E77CF572DBCDA5B0039928F /* Frameworks */,
@@ -81,6 +86,7 @@
 			name = GRDBCustomSQLiteBuild;
 			packageProductDependencies = (
 				4E77CF582DBCDA5B0039928F /* GRDB */,
+				4E77CF7E2DBCE9BE0039928F /* SQLiteExtensions */,
 			);
 			productName = GRDBCustomSQLiteBuild;
 			productReference = 4E222E2A2DBCCD060008708F /* GRDBCustomSQLiteBuild.app */;
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E77CF752DBCE91E0039928F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +348,10 @@
 		4E77CF582DBCDA5B0039928F /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GRDB;
+		};
+		4E77CF7E2DBCE9BE0039928F /* SQLiteExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SQLiteExtensions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E13D2F82769BC230037588C /* DatabaseBackupProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13D2F72769BC230037588C /* DatabaseBackupProgress.swift */; };
+		4E77CF5F2DBCDFBE0039928F /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E77CF5E2DBCDFBE0039928F /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ECF777E273AFBAB001685F5 /* BackupTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF777A273AFB72001685F5 /* BackupTestCase.swift */; };
 		56012B6A2573FAE700B4925B /* CommonTableExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56012B682573FAE600B4925B /* CommonTableExpressionTests.swift */; };
 		56012B82257404A400B4925B /* CommonTableExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56012B80257404A300B4925B /* CommonTableExpression.swift */; };
@@ -452,6 +453,7 @@
 
 /* Begin PBXFileReference section */
 		4E13D2F72769BC230037588C /* DatabaseBackupProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseBackupProgress.swift; sourceTree = "<group>"; };
+		4E77CF5E2DBCDFBE0039928F /* sqlite3ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = SQLiteCustom/src/sqlite/src/sqlite3ext.h; sourceTree = "<group>"; };
 		4ECF777A273AFB72001685F5 /* BackupTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupTestCase.swift; sourceTree = "<group>"; };
 		56012B682573FAE600B4925B /* CommonTableExpressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableExpressionTests.swift; sourceTree = "<group>"; };
 		56012B80257404A300B4925B /* CommonTableExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableExpression.swift; sourceTree = "<group>"; };
@@ -1793,6 +1795,7 @@
 				56781B06243F7B4B00650A83 /* GRDB-Bridging.h */,
 				F3BA7FF11CFB23D3003DC1BA /* GRDB.h */,
 				F3BA7FF01CFB23C9003DC1BA /* sqlite3.h */,
+				4E77CF5E2DBCDFBE0039928F /* sqlite3ext.h */,
 				F3BA7FEF1CFB23BF003DC1BA /* module.modulemap */,
 				F3BA7FEE1CFB23B7003DC1BA /* GRDB.xcconfig */,
 				F3BA813B1CFB3770003DC1BA /* GRDBCustomSQLite-Testing.xcconfig */,
@@ -1821,6 +1824,7 @@
 				F3BA80931CFB2F13003DC1BA /* GRDB.h in Headers */,
 				56C9EB9B2495324700FE5D55 /* grdb_config.h in Headers */,
 				56781B08243F7B5300650A83 /* GRDB-Bridging.h in Headers */,
+				4E77CF5F2DBCDFBE0039928F /* sqlite3ext.h in Headers */,
 				F3BA80951CFB2F18003DC1BA /* sqlite3.h in Headers */,
 				EED476F21CFD17270026A4EC /* GRDBCustomSQLite-USER.h in Headers */,
 			);
