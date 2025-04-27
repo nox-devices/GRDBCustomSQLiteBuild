@@ -97,10 +97,10 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
       # The path to your custom "GRDBCustomSQLite-USER.h":
       CUSTOMSQLITE_H_USER_PATH="CustomSQLiteConfig/GRDBCustomSQLite-USER.h"
       
-      # The name of the .framework output file (We usually want GRDB.framework)
+      # The name of the .xcframework output file (We usually want GRDB.xcframework)
       FRAMEWORK_NAME="GRDB"
       
-      # The directory in which the .framework file will be placed (must be reachable for the Swift Package)
+      # The directory in which the .xcframework will be placed (must be reachable for the Swift Package)
       OUTPUT_PATH="Binary"
       
       # Build configuration. Usually Release is fine.
@@ -143,7 +143,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
       }
       
       #######################################################
-      # --- Added: detect which platforms to build ----------
+      # --- detect which platforms to build ----------
       #######################################################
       
       # Normalise incoming arguments to lower-case
@@ -205,7 +205,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
       XCFRAMEWORK_COMPONENTS=()
       
       #######################################################
-      # --- Added: platform-specific build helpers ----------
+      # --- platform-specific build helpers ----------
       #######################################################
       archive_pair() {
           local device_dest="$1"        # e.g. "generic/platform=iOS"
@@ -257,7 +257,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
       }
       
       #######################################################
-      # --- Added: perform builds based on arguments --------
+      # --- perform builds based on arguments --------
       #######################################################
       
       if platform_requested ios; then
