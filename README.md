@@ -375,7 +375,7 @@ Make sure to update the binary whenever you pulled a new version:
 ## Load Extensions
 
 > [!NOTE]  
-> The first step below will hopefully become a default for the `GRDBCustom` project so that you don't have to do this manually every time. But I have no idea if that if feasible.
+> The first step below will hopefully become a default for the `GRDBCustom` project so that you don't have to do this manually every time. But I have no idea if that is feasible.
 
 > [!NOTE]  
 > The second step is inspired by the [SQLiteVec](https://github.com/jkrukowski/SQLiteVec) package that demonstrates how to load SQLite extensions in a Swift package (but using `sqlite3.c` directly, without GRDB as wrapper).
