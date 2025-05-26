@@ -18,7 +18,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
     ```sh
     git remote add grdb https://github.com/groue/GRDB.swift.git
     git fetch grdb --tags
-    git subtree add --prefix GRDBCustom/GRDB grdb v7.4.1 --squash
+    git subtree add --prefix GRDBCustom/GRDB grdb v7.5.0 --squash
     ```
 
 5. Add [swiftlyfalling/SQLiteLib](https://github.com/swiftlyfalling/SQLiteLib) as a subtree to your app's repository:
@@ -44,7 +44,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
 
     It is recommended that you enable the `SQLITE_ENABLE_SNAPSHOT` option. It allows GRDB to optimize [ValueObservation](https://swiftpackageindex.com/groue/GRDB.swift/documentation/grdb/valueobservation) when you use a [Database Pool](https://swiftpackageindex.com/groue/GRDB.swift/documentation/grdb/databasepool).
 
-7. Create four files in the `GRDBCustom/CustomSQLiteConfig` folder:
+7. Create three files in the `GRDBCustom/CustomSQLiteConfig` folder:
 
     - `SQLiteLib-USER.xcconfig`: this file sets the extra SQLite compilation flags.
         
@@ -363,7 +363,7 @@ git subtree pull --prefix GRDBCustom/GRDB/SQLiteCustom/src sqlite-custom master 
 
 # GRDB
 git fetch grdb --tags
-git subtree pull --prefix GRDBCustom/GRDB grdb v7.4.1 --squash
+git subtree pull --prefix GRDBCustom/GRDB grdb v7.5.0 --squash
 ```
 
 Make sure to update the binary whenever you pulled a new version:
@@ -419,7 +419,13 @@ Make sure to update the binary whenever you pulled a new version:
 
      This adds the `sqlite3ext.h` to the umbrella header for the GRDB module. It also makes sure that the Objective-C code in the file is not used when this is imported from a pure C SQlite extension. Finally, it temporarily defines `SQLITE_CORE` to declare the imports. If this is not present, then `grdb-config.h` will fail to compile because the `sqlite3ext.h` messes with the sqlite3_api it sees. This should not affect SQLite at all, it should makes it possible to expose the `sqlite3ext.h` header.
 
-2. Add a "SQLiteExtensions" target to the `GRDBCustom` Swift package.
+2. Rebuild the binary.
+
+    ```sh
+    ./make_binary.sh ios
+    ```
+
+3. Add a "SQLiteExtensions" target to the `GRDBCustom` Swift package.
 
     - Add a `Sources` folder to `GRDBCustom`:
   
@@ -500,7 +506,7 @@ Make sure to update the binary whenever you pulled a new version:
 
    - Add the `SQLiteExtensions` target to your app target's "Frameworks, Libraries and Embedded Content".
 
-2. Initialize the extensions in your app as early as possible, _before_ initializing or opening a database connection. For example:
+4. Initialize the extensions in your app as early as possible, _before_ initializing or opening a database connection. For example:
 
    ```swift
     import GRDB
@@ -544,7 +550,7 @@ Make sure to update the binary whenever you pulled a new version:
     }
    ```
 
-3. Add and load an SQLite extension. As a demonstration, this guide will use [sqlite-vec](https://github.com/asg017/sqlite-vec), which allows for fast and efficient vector embedding storage and search.
+5. Add and load an SQLite extension. As a demonstration, this guide will use [sqlite-vec](https://github.com/asg017/sqlite-vec), which allows for fast and efficient vector embedding storage and search.
 
     - Find the source files of the extension. In this example, those are just two files: `sqlite-vec.c` and `sqlite-vec.h`, which you can download by going to the [Releases](https://github.com/asg017/sqlite-vec/releases) page and downloading the amalgamation `.zip` file from "Assets". For example: `sqlite-vec-0.1.7-alpha.2-amalgamation.zip`
   
@@ -574,7 +580,7 @@ Make sure to update the binary whenever you pulled a new version:
          }
          ```
 
-4. Use the extension
+6. Use the extension
 
     ```swift
     // Run migration to create the table
