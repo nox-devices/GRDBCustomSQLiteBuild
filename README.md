@@ -72,7 +72,7 @@ You can clone the repository and launch it in Xcode. It should run out of the bo
 
 8. Create one more file in the `GRDBCustom` folder:
     
-    - `make_binary.sh`: this file lets your application know about extra compilation flags.
+    - `make_binary.sh`: this file builds the binary that you will use in your app.
   
         Modify the top of this file so that it contains correct paths. If you followed the folder and file structure above, you shouldn't need to change anything.
         
